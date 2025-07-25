@@ -6,6 +6,8 @@ A compiled Flask API application with a PostgreSQL database. The application pro
 
 There's a lot of moving pieces here and the idea is for you to spend most of your time on the pieces the align with your strengths. You're an engineer tasked with hitting an api endpoint to extract data, transform that data as needed, and write the data to postgres. Once written, you build a cursory analysis of the tables along with any additional queries or assets you've created to lend to the analysis. The entire exercise should be less than 2 hours. We realize you can spend 50 hours making this perfect but that is not the goal here. If you want to write advanced idempotent scripts to ETL the data, fine. If you want to manually curl the data and use a tool to restructure it into a csv to import into postgres, also fine! This is more about what you do with the data, less so how you go about it.
 
+An important note is that anything written to postgres is not persisted when you send your assessment in. Please commit any ETL code so that your efforts can be replicated. If performing manual manipulations, please commit the resulting data. Additionally, please commit any further DDL or analysis that you have time for. 
+
 ## 🚀 Quick Start
 
 ### Prerequisites

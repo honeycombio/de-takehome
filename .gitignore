@@ -1,5 +1,4 @@
 # Source code files (exclude from repository)
-*.py
 !requirements.txt
 
 # Distribution / packaging

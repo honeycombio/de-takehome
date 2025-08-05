@@ -15,10 +15,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY __pycache__ ./__pycache__
 COPY start.sh ./start.sh
 COPY run_app.py ./run_app.py
-RUN chmod +x ./start.sh
+# Ensure proper line endings and permissions
+RUN sed -i 's/\r$//' ./start.sh && chmod +x ./start.sh
 
 # Expose port
 EXPOSE 5000
 
-# Run the startup script
-CMD ["bash", "./start.sh"]
+# Run the startup script (using sh for maximum compatibility)
+CMD ["sh", "./start.sh"]
